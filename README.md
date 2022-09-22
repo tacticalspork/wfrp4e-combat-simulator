@@ -4,8 +4,9 @@ Yeah what it sounds like
 
 TODO:
 
-1) Add ability between turns for inputs to affect board state
-2) Add ranged unit combat rules
-3) Add GUI for units + stats
-4) Add ability for multiple units to fight
-5) Morale System
+- Add ability between turns for inputs to affect board state
+- Add option for initiative order to matter + combat being two attack phases
+- Add ranged unit combat rules
+- Add GUI for units + stats
+- Add ability for multiple units to fight
+- Morale System
