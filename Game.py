@@ -11,7 +11,7 @@ class Game():
         self.teamTwo = Army()
 
         self.teamOne.CreateSkavenSwarmUnits()
-        self.teamTwo.CreateEliteUnits()
+        self.teamTwo.CreateGodUnits()
 
         self.maxOutnumbering = 3
         self.outnumberingPenalty = -10 #determines how much disadvantage per outnumbering
