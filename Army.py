@@ -1,4 +1,4 @@
-from SimplifiedCharacter import SimplifiedCharacter
+from Character import Character
 import random
 
 class Army():
@@ -12,7 +12,7 @@ class Army():
         print("What is the name of the individual unit?")
         self.UnitName = input()
         print("What are the stat blocks of these set of units")
-        self.characterTemplate = SimplifiedCharacter()
+        self.characterTemplate = Character()
         self.characterTemplate.CreateCharacter()
         print("How many of them are there?")
         self.numberOfUnits = input()
@@ -25,7 +25,7 @@ class Army():
         self.UnitName = "Test Unit"
         self.numberOfUnits = random.randint(8, 12)
         for i in range(self.numberOfUnits):
-            testUnit = SimplifiedCharacter(random.randint(40, 50), random.randint(40, 50), 7, 7, 3, 3, 20, 16)
+            testUnit = Character(random.randint(40, 50), random.randint(40, 50), 7, 7, 3, 3, 20, 16)
             self.Units.append(testUnit)
             self.AliveUnits.append(testUnit)
     
@@ -34,7 +34,7 @@ class Army():
         self.UnitName = "Clanrat"
         self.numberOfUnits = 35
         for i in range(self.numberOfUnits):
-            testUnit = SimplifiedCharacter(35, 35, 5, 5, 1, 3, 20, 10)
+            testUnit = Character(35, 35, 5, 5, 1, 3, 20, 10)
             self.Units.append(testUnit)
             self.AliveUnits.append(testUnit)
     
@@ -43,7 +43,7 @@ class Army():
         self.UnitName = "Clanrat"
         self.numberOfUnits = 350
         for i in range(self.numberOfUnits):
-            testUnit = SimplifiedCharacter(35, 35, 5, 5, 1, 3, 20, 10)
+            testUnit = Character(35, 35, 5, 5, 1, 3, 20, 10)
             self.Units.append(testUnit)
             self.AliveUnits.append(testUnit)
     
@@ -52,7 +52,7 @@ class Army():
         self.UnitName = "Empire Knight"
         self.numberOfUnits = 10
         for i in range(self.numberOfUnits):
-            testUnit = SimplifiedCharacter(60, 60, 8, 8, 5, 5, 20, 20)
+            testUnit = Character(60, 60, 8, 8, 5, 5, 20, 20)
             self.Units.append(testUnit)
             self.AliveUnits.append(testUnit)
 
@@ -61,7 +61,7 @@ class Army():
         self.UnitName = "Tyrion"
         self.numberOfUnits = 1
         for i in range(self.numberOfUnits):
-            testUnit = SimplifiedCharacter(120, 120, 10, 10, 7, 7, 20, 30)
+            testUnit = Character(120, 120, 10, 10, 7, 7, 20, 30)
             self.Units.append(testUnit)
             self.AliveUnits.append(testUnit)
 

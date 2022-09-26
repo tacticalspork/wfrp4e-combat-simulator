@@ -1,4 +1,4 @@
-from FightRules import MeleeFight
+from FightRules import FightRules
 
 class FightingGroup():
     def __init__(self, fighterOne = None, groupFighters = []):
@@ -9,7 +9,7 @@ class FightingGroup():
         print(self.fighterOne.MeleeSkill)
         print(len(self.groupFighters))
 
-    def Fight(self, maxOutnumbering, outnumberingPenalty):
+    def Fight(self, maxOutnumbering, outnumberingPenalty, maxAdvantage):
         numFightersFighting = 1
         if(len(self.groupFighters) > maxOutnumbering):
             numFightersFighting = maxOutnumbering
@@ -19,4 +19,4 @@ class FightingGroup():
         penalty = outnumberingPenalty * (numFightersFighting - 1)
 
         for i in range(numFightersFighting):
-            MeleeFight(self.fighterOne, self.groupFighters[i], penalty)
+            FightRules.MeleeFightNoInitiative(self.fighterOne, self.groupFighters[i], penalty, maxAdvantage)

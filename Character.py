@@ -1,4 +1,4 @@
-class SimplifiedCharacter():
+class Character():
     def __init__(self, MeleeSkill = 0, RangedSkill = 0, MeleeDamage = 0, RangedDamage = 0, Armor  = 0, Toughness = 0, Dodge = 0, Hitpoints = 0):
         self.MeleeSkill = MeleeSkill
         self.RangedSkill = RangedSkill
